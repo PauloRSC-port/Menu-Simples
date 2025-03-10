@@ -1,37 +1,20 @@
-n1 = int(input("Escolha um número: "))
-n2 = int(input("Escolha outro número: "))
-opcao = 0
-while opcao != 7:
-    print('''
-    [1]Soma 
-    [2]Multiplicação
-    [3]Divisão
-    [4]Maior
-    [5]Menor
-    [6]Digitar Novos Números
-    [7]Sair''')
-    opcao = int(input("Escolha uma opção: "))
-    if opcao == 1:
-        print(f"A soma de {n1} + {n2} = {n1 + n2}")
-    elif opcao == 2:
-        print(f"A multiplicação de {n1} x {n2} = {n1 * n2}")
-    elif opcao == 3:
-        print(f"A divivisão entre {n1}/{n2} = {n1 / n2}")
-    elif opcao == 4:
-        if n1 > n2:
-            print(f"O número maior é {n1}")
-        else:
-            print(f"O número maior é {n2}")
-    elif opcao == 5:
-        if n1 < n2:
-            print(f"O menor número é {n1}")
-        else:
-            print(f"O número menor é {n2}")
-    elif opcao == 6:
-        n1 = int(input("Digite um novo número: "))
-        n2 = int(input("Digite um novo número: "))
-    elif opcao == 7:
-        print("FIM")                  
+Análise do Código - Calculadora Interativa em Python
+Este projeto é uma calculadora interativa desenvolvida em Python que permite ao usuário realizar diversas operações matemáticas entre dois números escolhidos. O programa utiliza estruturas fundamentais da linguagem, como entrada de dados, estrutura de repetição (while) e condicionais (if-elif-else), tornando-se um excelente exemplo de lógica de programação aplicada.
 
+🛠️ Funcionalidades
+🔹 O usuário insere dois números iniciais.
+🔹 Um menu de opções é exibido, permitindo a escolha entre:
 
+Soma
+Multiplicação
+Divisão
+Comparação para encontrar o maior ou o menor número
+Inserção de novos números
+Encerramento do programa
+🔹 O programa permanece em execução até que o usuário escolha a opção de sair.
 
+📌 Conceitos Utilizados
+✅ Entrada de dados (input): Coleta os números e a escolha do usuário.
+✅ Laço de repetição (while): Mantém o programa em funcionamento até que o usuário escolha sair.
+✅ Condicionais (if-elif-else): Determina a operação escolhida e executa a lógica correspondente.
+✅ Interpolação de strings (f-strings): Utilizada para exibir os resultados de forma clara e dinâmica.
