@@ -1,0 +1,36 @@
+n1 = int(input("Escolha um número: "))
+n2 = int(input("Escolha outro número: "))
+opcao = 0
+while opcao != 7:
+    print('''
+    [1]Soma 
+    [2]Multiplicação
+    [3]Divisão
+    [4]Maior
+    [5]Menor
+    [6]Digitar Novos Números
+    [7]Sair''')
+    opcao = int(input("Escolha uma opção: "))
+    if opcao == 1:
+        print(f"A soma de {n1} + {n2} = {n1 + n2}")
+    elif opcao == 2:
+        print(f"A multiplicação de {n1} x {n2} = {n1 * n2}")
+    elif opcao == 3:
+        print(f"A divivisão entre {n1}/{n2} = {n1 / n2}")
+    elif opcao == 4:
+        if n1 > n2:
+            print(f"O número maior é {n1}")
+        else:
+            print(f"O número maior é {n2}")
+    elif opcao == 5:
+        if n1 < n2:
+            print(f"O menor número é {n1}")
+        else:
+            print(f"O número menor é {n2}")
+    elif opcao == 6:
+        n1 = int(input("Digite um novo número: "))
+        n2 = int(input("Digite um novo número: "))
+    elif opcao == 7:
+        print("FIM")                  
+
+
